@@ -3,8 +3,8 @@
 from collections import OrderedDict
 import numpy as np
 from tqdm.auto import tqdm  # pylint:disable
-from .. import errors as err
-from ..base_model import BaseModel
+import errors as err
+from base_model import BaseModel
 
 
 def spike_reset_callback(neuron: "LeakyIntegrateFire"):

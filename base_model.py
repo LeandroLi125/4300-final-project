@@ -1,3 +1,4 @@
+
 # pylint:disable=C0103
 """Base Class for ODE-based Models
 """
@@ -12,10 +13,10 @@ from scipy.integrate import solve_ivp, odeint
 from scipy.integrate._ivp.base import OdeSolver
 from scipy.interpolate import interp1d
 
-from . import errors as err
-from . import types as tpe
-from .model_parser import ParsedModel
-from .utils.model_viewer import ModelViewer
+import errors as err
+import types as tpe
+from model_parser import ParsedModel
+from model_viewer import ModelViewer
 
 PY37 = sys.version_info.major * 10 + sys.version_info.minor >= 37
 

@@ -2,7 +2,8 @@
 
 from collections import OrderedDict
 import numpy as np
-from ..base_model import BaseModel
+from base_model import BaseModel
+
 
 
 class HodgkinHuxleyRinzel(BaseModel):
